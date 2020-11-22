@@ -300,17 +300,17 @@
     const hover_stars = document.querySelectorAll('.hover-star');
 	hover_stars.forEach(star => {
 		star.addEventListener('mouseover', () => {
-            star.src = "full-star.png";
+            star.src = "assets/full-star.png";
             var i;
             for (i = star.id; i > 0; i--) {
-                hover_stars[i-1].src = "full-star.png";
+                hover_stars[i-1].src = "assets/full-star.png";
             }
 		})
 		star.addEventListener('mouseout', () => {
-			star.src = "empty-star.png";
+			star.src = "assets/empty-star.png";
             var i;
             for (i = 0; i < hover_stars.length; i++) {
-                hover_stars[i].src = "empty-star.png";
+                hover_stars[i].src = "assets/empty-star.png";
             }
 		})
         star.addEventListener('click', () => {
